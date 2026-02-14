@@ -8,7 +8,7 @@ interface SectionProps {
 }
 
 export default function Section({ section }: SectionProps) {
-    const HeadingTag = `h${section.level}` as keyof JSX.IntrinsicElements;
+    const HeadingTag = `h${section.level}` as keyof React.JSX.IntrinsicElements;
 
     const headingClasses = {
         1: 'text-3xl md:text-4xl font-bold mb-4 mt-8 text-[var(--color-liturgical-purple)] print:text-black',
